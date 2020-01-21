@@ -1,13 +1,44 @@
-.friends .friends__plus {
+.friends {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends .friends__plus,
+.friends__birth {
   margin: 20px 0px;
   padding: 20px 0px;
   border-top: 1px solid #f7f7f7;
   border-bottom: 1px solid #f7f7f7;
 }
 
+.friends .friends__plus {
+  border-top: none;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 .friends__plus .friends__title,
+.friends__birth .friends__title,
 .friends__list .friends__title {
   font-size: 14px;
   opacity: 0.6;
   margin-bottom: 12px;
+}
+
+.friends__title {
+  display: inline-block;
+}
+
+.list-parent {
+  position: relative;
+}
+
+.hide-btn {
+  position: absolute;
+  right: 0;
+  opacity: 0.6;
+}
+
+.hide-btn:hover ~ .friend {
+  display: none;
 }

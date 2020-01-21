@@ -49,8 +49,10 @@
 }
 
 .more__btn-list .more__btn {
+  font-size: 34px;
   margin-right: 50px;
 }
+
 .more__suggestions-list .more__suggestion {
-  margin-right: 25px;
+  margin-right: 40px;
 }

@@ -20,6 +20,24 @@
   width: 70px;
 }
 
+.group-avatar {
+  width: 27.5px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.group-avatar:nth-child(2n + 1) {
+  margin-right: 5px;
+}
+
+.group-avatars {
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 15px;
+}
+
 .friend .friend__column {
   display: flex;
   justify-content: center;
@@ -34,8 +52,18 @@
 
 .friend__content .friend__status,
 .friend__content .friend__bottom-text,
+.friend__content .friend__number,
 .friend .chat__timestamp {
   opacity: 0.6;
+}
+
+.friend__name {
+  display: flex;
+}
+
+.friend__name .friend__number {
+  font-weight: 600;
+  margin-left: 5px;
 }
 
 .friend__content .friend__bottom-text {

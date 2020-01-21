@@ -13,9 +13,14 @@
 .chats-body {
   padding: 0;
   padding-top: 100px;
+  padding-bottom: 60px; /* 스크롤 시 마지막 메시지 chat__write-container에 가려지는 현상 해결 */
   background-image: url(../images/chatBg.png);
   min-height: 100vh;
-  overflow: hidden;
+  -ms-overflow-style: none; /* IE 스크롤바 감추기 */
+}
+
+.chats-body::-webkit-scrollbar {
+  display: none !important; /* 스크롤바 감추기 */
 }
 
 .chats-body .header,
@@ -55,7 +60,6 @@
 
 .chat__write {
   bottom: 0px;
-  width: 100%;
   border-radius: 0;
   padding: 20px 60px;
   width: 100%;
