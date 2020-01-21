@@ -39,6 +39,7 @@
   opacity: 0.6;
 }
 
-.hide-btn:hover ~ .friend {
+.hide-btn:hover ~ .friend,
+.hide-btn:active ~ .friend {
   display: none;
 }
