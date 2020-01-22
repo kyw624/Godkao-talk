@@ -40,6 +40,6 @@
 }
 
 .hide-btn:hover ~ .friend,
-.hide-btn:active ~ .friend {
+.hide-btn:focus ~ .friend {
   display: none;
 }
