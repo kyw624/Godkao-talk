@@ -1,18 +1,5 @@
-.header-wrapper {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  padding: 10px 0px;
-  background-color: white;
-  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  z-index: 1;
-}
-
 .chats-body {
   padding: 0;
-  padding-top: 100px;
   padding-bottom: 60px; /* 스크롤 시 마지막 메시지 chat__write-container에 가려지는 현상 해결 */
   background-image: url(../images/chatBg.png);
   min-height: 100vh;
@@ -23,9 +10,13 @@
   display: none !important; /* 스크롤바 감추기 */
 }
 
-.chats-body .header,
-.chats-body .status-bar {
-  padding: 0px 20px;
+.chats-body .header-wrapper {
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chats-body .header {
+  margin-bottom: 40px;
 }
 
 .chat__write-container {
